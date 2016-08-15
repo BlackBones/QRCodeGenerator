@@ -7,6 +7,7 @@
 //
 
 #import "QRCodeGenerator.h"
+#import "UIImage+RoundedImage.h"
 
 @interface QRCodeGenerator ()
 @property (nonatomic,strong) CIFilter *filter;
@@ -36,10 +37,13 @@
     CGSize size = codeImage.size;
     CGSize size2 =CGSizeMake(1.0 / 5.5 * size.width, 1.0 / 5.5 * size.height);
     
+    //圆角
+    UIImage *roundedImg = [UIImage createRoundedRectImage:avatarImage size:size2 radius:5 ];
+    
     UIGraphicsBeginImageContext(size);
     
     [codeImage drawInRect:CGRectMake(0, 0, size.width, size.height)];
-    [avatarImage drawInRect:CGRectMake((size.width - size2.width) / 2.0, (size.height - size2.height) / 2.0, size2.width, size2.height)];
+    [roundedImg drawInRect:CGRectMake((size.width - size2.width) / 2.0, (size.height - size2.height) / 2.0, size2.width, size2.height)];
     
     UIImage *resultingImage =UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

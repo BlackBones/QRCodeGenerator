@@ -33,7 +33,7 @@
     /**
      *  简单自定义颜色
      */
-    UIImage *codeImage = [QRCodeGenerator QRCodeWithContent:_tf.text imageSize:300.0f withRed:31.0 andGreen:42.0 andBlue:15.0];
+    UIImage *codeImage = [QRCodeGenerator QRCodeWithContent:_tf.text imageSize:300.0 withRed:31.0 andGreen:42.0 andBlue:15.0];
     
     /**
      *  添加头像

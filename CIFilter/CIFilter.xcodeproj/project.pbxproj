@@ -17,6 +17,7 @@
 		3A7348D61C9254C500704E04 /* CIFilterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7348D51C9254C500704E04 /* CIFilterTests.m */; };
 		3A7348E11C9254C500704E04 /* CIFilterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7348E01C9254C500704E04 /* CIFilterUITests.m */; };
 		3A7348F21C92A81D00704E04 /* QRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7348F11C92A81D00704E04 /* QRCodeGenerator.m */; };
+		3AA14DCE1D61642400571A43 /* UIImage+RoundedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA14DCD1D61642400571A43 /* UIImage+RoundedImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		3A7348EF1C92661100704E04 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		3A7348F01C92A81D00704E04 /* QRCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeGenerator.h; sourceTree = "<group>"; };
 		3A7348F11C92A81D00704E04 /* QRCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeGenerator.m; sourceTree = "<group>"; };
+		3AA14DCC1D61642400571A43 /* UIImage+RoundedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedImage.h"; sourceTree = "<group>"; };
+		3AA14DCD1D61642400571A43 /* UIImage+RoundedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 			children = (
 				3A7348F01C92A81D00704E04 /* QRCodeGenerator.h */,
 				3A7348F11C92A81D00704E04 /* QRCodeGenerator.m */,
+				3AA14DCC1D61642400571A43 /* UIImage+RoundedImage.h */,
+				3AA14DCD1D61642400571A43 /* UIImage+RoundedImage.m */,
 			);
 			name = QRCodeGenerator;
 			sourceTree = "<group>";
@@ -290,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A7348C31C9254C400704E04 /* ViewController.m in Sources */,
+				3AA14DCE1D61642400571A43 /* UIImage+RoundedImage.m in Sources */,
 				3A7348F21C92A81D00704E04 /* QRCodeGenerator.m in Sources */,
 				3A7348C01C9254C400704E04 /* AppDelegate.m in Sources */,
 				3A7348BD1C9254C400704E04 /* main.m in Sources */,
